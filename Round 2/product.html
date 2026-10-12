@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Product details from the Riyasat limited drop.">
+  <title>Product | Riyasat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="product">
+  <div class="page-shell">
+    <div data-shared-header></div>
+    <main class="standalone-main">
+      <div class="product-detail" id="productView">
+        <div class="product-detail-image" id="detailImage"></div>
+        <div class="product-detail-copy"><p class="section-tag" id="detailCategory">Limited drop</p><h1 id="detailName">Product</h1><p class="product-detail-price"><span id="detailPrice"></span> <small>incl. GST</small></p>
+          <p class="product-detail-description" id="detailDescription"></p><p class="product-detail-fit" id="detailFitSizes"></p>
+          <p class="product-detail-fit"><strong>Available colours:</strong> <span id="detailColorsText"></span></p>
+          <label class="detail-field" for="detailColour">Colour<select id="detailColour"></select></label>
+          <label class="detail-field" for="detailSize">Size<select id="detailSize"></select></label>
+          <label class="detail-field" for="detailQuantity">Quantity<input id="detailQuantity" type="number" min="1" max="5" value="1"></label>
+          <div class="detail-actions"><button class="btn btn-primary" id="detailAdd" type="button">Add to cart</button><button class="btn btn-secondary page-like" id="detailLike" type="button" aria-pressed="false">♡ Like</button></div>
+          <p class="shipping-message">Free shipping on orders above ₹3,000 · 7-day size exchange.</p><a class="text-link" href="shop.html">← Back to all pieces</a>
+        </div>
+      </div>
+      <section id="productNotFound" class="empty-state hidden"><p class="section-tag">Not found</p><h1>That piece isn’t in this drop.</h1><a class="btn btn-primary" href="shop.html">Back to shop</a></section>
+    </main>
+    <div data-shared-footer></div>
+  </div>
+  <script src="products.js"></script><script src="pages.js"></script>
+</body>
+</html>

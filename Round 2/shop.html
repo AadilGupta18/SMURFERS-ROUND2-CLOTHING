@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shop the latest Riyasat limited drop.">
+  <title>Shop the Drop | Riyasat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="shop">
+  <div class="page-shell">
+    <div data-shared-header></div>
+    <main class="standalone-main">
+      <header class="page-intro"><p class="section-tag">Limited monthly drop</p><h1>The drop.</h1><p>Eight pieces. Small batches. Made to be worn your way.</p></header>
+      <div class="shop-controls page-shop-controls"><div class="filter-group" aria-label="Filter products">
+        <button class="filter-button is-active" data-filter="all" type="button">All</button><button class="filter-button" data-filter="t-shirt" type="button">T-shirts</button><button class="filter-button" data-filter="hoodie" type="button">Hoodies</button><button class="filter-button" data-filter="overshirt" type="button">Overshirts</button><button class="filter-button" data-filter="jacket" type="button">Jackets</button><button class="filter-button" data-filter="trousers" type="button">Trousers</button><button class="filter-button" data-filter="accessory" type="button">Accessories</button>
+      </div><label class="sort-wrap"><span>Sort</span><select id="pageSort"><option value="featured">Featured</option><option value="low-high">Price: Low to High</option><option value="high-low">Price: High to Low</option></select></label></div>
+      <div class="product-grid" id="pageProductGrid"></div>
+    </main>
+    <div data-shared-footer></div>
+  </div><script src="products.js"></script><script src="pages.js"></script>
+</body>
+</html>

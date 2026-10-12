@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contact Riyasat for product, order and customer support enquiries.">
+  <title>Contact | Riyasat</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="contact">
+  <div class="page-shell">
+    <div data-shared-header></div>
+    <main class="standalone-main">
+      <header class="page-intro">
+        <p class="section-tag">Contact</p>
+        <h1>We’re easy to reach.</h1>
+        <p>Questions about a fit, an existing order or the next drop? Send us a message.</p>
+      </header>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:hello@riyasat.in"><span>Email</span><strong>hello@riyasat.in</strong><small>For orders and general enquiries</small></a>
+        <a class="contact-card" href="https://wa.me/9198XXXXXXXXX" target="_blank" rel="noreferrer"><span>WhatsApp</span><strong>+91 98XXX XXXXX</strong><small>Message us about sizing and delivery</small></a>
+        <a class="contact-card" href="https://instagram.com/riyasat.official" target="_blank" rel="noreferrer"><span>Instagram</span><strong>@riyasat.official</strong><small>Follow the drop and behind the scenes</small></a>
+      </div>
+      <form id="contactForm" class="order-form contact-form" novalidate>
+        <div class="section-heading single-line"><div><p class="section-tag">Send a message</p><h2>What can we help with?</h2></div></div>
+        <div class="form-grid">
+          <div class="field"><label for="contactName">Full name</label><input id="contactName" name="name" type="text" autocomplete="name" required><small class="error-message" data-error-for="contactName"></small></div>
+          <div class="field"><label for="contactEmail">Email address</label><input id="contactEmail" name="email" type="email" autocomplete="email" required><small class="error-message" data-error-for="contactEmail"></small></div>
+          <div class="field"><label for="contactPhone">Phone number <span>(optional)</span></label><input id="contactPhone" name="phone" type="tel" inputmode="numeric" maxlength="10" autocomplete="tel"><small class="error-message" data-error-for="contactPhone"></small></div>
+          <div class="field"><label for="contactSubject">Subject</label><select id="contactSubject" name="subject" required><option value="">Choose a topic</option><option>Product and sizing</option><option>Existing order</option><option>Shipping and exchange</option><option>General enquiry</option></select><small class="error-message" data-error-for="contactSubject"></small></div>
+          <div class="field field-wide"><label for="contactMessage">Message</label><textarea id="contactMessage" name="message" rows="5" required></textarea><small class="error-message" data-error-for="contactMessage"></small></div>
+        </div>
+        <button class="btn btn-primary submit-btn" type="submit">Save message</button>
+        <p class="form-note">This demo saves your message in this browser only. It is not sent to Riyasat.</p>
+      </form>
+      <section id="contactSuccess" class="success-state hidden" aria-live="polite">
+        <div class="success-card"><p class="section-tag">Saved in this browser</p><h3>Thanks for getting in touch.</h3><p>Your contact details and message have been saved locally on this device.</p></div>
+      </section>
+      <div class="info-band"><strong>Shipping</strong><p>Free shipping on orders above ₹3,000. Delivery in 4–7 working days.</p><strong>Exchange</strong><p>7-day size exchange available on all pieces.</p></div>
+    </main>
+    <div data-shared-footer></div>
+  </div>
+  <script src="products.js"></script><script src="pages.js"></script>
+</body>
+</html>
